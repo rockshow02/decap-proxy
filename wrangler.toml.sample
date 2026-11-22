@@ -32,6 +32,7 @@ name = "decap-proxy"
 # - https://developers.cloudflare.com/workers/configuration/secrets/
 [vars]
 GITHUB_REPO_PRIVATE = "0"             # Should be set to "1", if your website repo is private
+ALLOWED_ORIGINS = ""                  # Origins of your Decap admin site, comma separated, e.g. "https://admin.example.com". The token is only sent to these. Empty = /auth and /callback refuse to run.
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
